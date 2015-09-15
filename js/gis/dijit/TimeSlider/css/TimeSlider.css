@@ -1,0 +1,22 @@
+.gis_TimeSliderDijit {
+	height: 16px;
+}
+
+.gis_TimeSliderDijit #timesliderbtn {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    background-image: url(../images/time.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgba(102, 102, 102, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(102, 102, 102, 0.8);
+}
+
+.gis_TimeSliderDijit .formContainer {
+    /*border: 1px solid #bbb;*/
+    width: 50px;
+}
