@@ -2,7 +2,7 @@
 # Time Slider Widget
 A widget for CMV (http://cmv.io/).
 
-![alt tag](https://github.com/vojvod/CMV_MapRefreshTimer_Widget/blob/master/img.jpg)
+![alt tag](https://github.com/vojvod/CMV_TimeSlider_Widget/blob/master/img.jpg)
 
 ## Widget Configuration
 Add the widget configuration object to the widgets object in viewer.js.
