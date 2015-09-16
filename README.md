@@ -1,6 +1,6 @@
 # CMV_TimeSlider_Widget
 # Time Slider Widget
-A widget for CMV (http://cmv.io/).
+A widget for CMV (http://cmv.io/). The Time Slider Widget provides controls that allow you to visualize time enabled layers. You can invoke it by clicking the Time Slider button under the Track Location button.
 
 ![alt tag](https://github.com/vojvod/CMV_TimeSlider_Widget/blob/master/img.jpg)
 
