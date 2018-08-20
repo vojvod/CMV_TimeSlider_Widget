@@ -1,5 +1,24 @@
 <div class="gis_TimeSliderDijit" >
     <div class="formContainer">
         <button id="timesliderbtn" title="Ενεργοποίηση Χρόνου" data-dojo-attach-point="timesliderbtn"  data-dojo-attach-event="onClick:EnableTimeSlider"></button>
-	</div>
+  </div>
+    <div id="timeSliderControlsContainer" data-dojo-attach-point="timeSliderControlsContainer">
+        <div class="datepicker-container">
+            <div data-dojo-attach-point="fromDateLabel">Data from</div>
+            <input class="datepicker" type="text" name="from" id="fromDate" value=""
+                data-dojo-type="dijit/form/DateTextBox" data-dojo-attach-point="fromDate"/>
+        </div>
+        <div class="datepicker-container">
+            <div data-dojo-attach-point="toDateLabel">to</div>
+            <input class="datepicker" type="text" name="to" id="toDate" value=""
+                data-dojo-type="dijit/form/DateTextBox" data-dojo-attach-point="toDate"/>
+        </div>
+        <button id="setButton" data-dojo-type="dijit/form/Button" type="button" data-dojo-attach-point="setButton">Set</button>
+        <br>
+        <div data-dojo-attach-point="timesliderDiv"></div>
+        <br>
+        <div>
+            <label data-dojo-attach-point="dateIndicatorText"></label>
+        </div>
+    </div>
 </div>
