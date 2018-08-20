@@ -7,7 +7,6 @@ define([
     'dojo/dom-attr',
     'dojo/dom-construct',
     'dojo/dom-style',
-    'dojo/on',
     'dijit/form/DateTextBox',
     'dijit/form/Button',
     'esri/TimeExtent',
@@ -16,15 +15,13 @@ define([
     'dojo/i18n!./TimeSlider/nls/resource',
     'xstyle/css!./TimeSlider/css/TimeSlider.css'
 ], function (declare, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, lang, domAttr,
-  domConst, domStyle, on, DateTextBox, Button, TimeExtent, TimeSlider, TimeSliderTemplate, i18n, css) {
+  domConst, domStyle, DateTextBox, Button, TimeExtent, TimeSlider, TimeSliderTemplate, i18n, css) {
     return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
         widgetsInTemplate: true,
         templateString: TimeSliderTemplate,
         i18n: i18n,
         enable: false,
         postCreate: function () {
-            // Hide timeslider control bar
-            domStyle.set(this.timeSliderControlsContainer, 'display', 'none');
             this.timesliderbtn.title = this.i18n.timesliderbntTIP;
             // Create time slider
             this.timeSlider = new TimeSlider({
@@ -58,7 +55,7 @@ define([
 
             this.toDateLabel.innerHTML = this.i18n.to;
             this.toDate.value = to;
-            on(this.toDate, 'change', lang.hitch(this, this._toDateChange));
+            this.toDate.on('change', lang.hitch(this, this._toDateChange));
 
             this.setButton.on('click', lang.hitch(this, this._setTimeSlider));
         },
