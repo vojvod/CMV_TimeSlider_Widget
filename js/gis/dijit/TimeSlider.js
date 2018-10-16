@@ -49,12 +49,12 @@ define([
             }));
 
             this.fromDateLabel.innerHTML = this.i18n.from;
-            this.fromDate.value = from;
+            this.fromDate.set('value', from);
             this.fromDate.on('change', lang.hitch(this, this._fromDateChange));
             
 
             this.toDateLabel.innerHTML = this.i18n.to;
-            this.toDate.value = to;
+            this.toDate.set('value', to);
             this.toDate.on('change', lang.hitch(this, this._toDateChange));
 
             this.setButton.on('click', lang.hitch(this, this._setTimeSlider));
