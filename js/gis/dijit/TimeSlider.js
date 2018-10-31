@@ -44,6 +44,7 @@ define([
             this.timeSlider.startup();
             this.map.setTimeSlider(this.timeSlider);
             
+            this.dateIndicatorText.innerHTML = this._formatDate(from) + ' - ' + this._formatDate(to);
             this.timeSlider.on('time-extent-change', lang.hitch(this, function (evt) {
                 this.dateIndicatorText.innerHTML = this._formatDate(evt.startTime) + ' - ' + this._formatDate(evt.endTime);
             }));
